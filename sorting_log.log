@@ -401,3 +401,373 @@ ValueError: could not convert string to float: 'dwfefw23\n'
 2023-10-22 13:25:30.016 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
 2023-10-22 13:26:09.472 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
 2023-10-22 13:26:10.373 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:36:27.736 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:28.448 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:36:34.551 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:34.740 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:34.905 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:35.118 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:35.357 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:35.571 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:35.840 | INFO     | __main__:create_random_list:45 - Создан новый случайный список.
+2023-10-22 13:36:37.222 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:25.437 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:26.248 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:28.659 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:29.005 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:29.405 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:37:29.771 | SUCCESS  | __main__:run_sorting:84 - Сравнение сортировки завершено.
+2023-10-22 13:38:19.175 | ERROR    | tkinter:__call__:1921 - An error has been caught in function '__call__', process 'MainProcess' (22920), thread 'MainThread' (8876):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 99, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000022BBBBC7B50>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000022BBDAF9870>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000022BBDA3A4B0>
+    └ <tkinter.Tk object .>
+
+> File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ (<KeyRelease event keysym=Escape keycode=27 x=1357 y=223>,)
+           │    └ <bound method SortingComparisonApp.on_text_edit of <__main__.SortingComparisonApp object at 0x0000022BBDAF9870>>
+           └ <tkinter.CallWrapper object at 0x0000022BBDAF9B10>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 89, in on_text_edit
+    data = list(map(float, data.split(",")))
+                           │    └ <method 'split' of 'str' objects>
+                           └ '\n'
+
+ValueError: could not convert string to float: '\n'
+2023-10-22 14:15:02.854 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:03.824 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:04.307 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:05.220 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:15:06.460 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:07.480 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:08.056 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:26.526 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:15:28.224 | SUCCESS  | __main__:run_sorting:85 - Сравнение сортировки завершено.
+2023-10-22 14:15:54.321 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:18:16.291 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:18:17.605 | ERROR    | __main__:run_sorting:71 - An error has been caught in function 'run_sorting', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+> File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 71, in run_sorting
+    bf = self.bubble_sort(self.my_list[:])
+         │    │           │    └ [356, 835, 900, 160, 920, 913, 959, 614, 4, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 4...
+         │    │           └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+         │    └ <function SortingComparisonApp.bubble_sort at 0x0000026754C31C60>
+         └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 53, in bubble_sort
+    if data[j] < data[j + 1]:
+       │    │    │    └ 999
+       │    │    └ [835, 900, 356, 920, 913, 959, 614, 160, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 478,...
+       │    └ 999
+       └ [835, 900, 356, 920, 913, 959, 614, 160, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 478,...
+
+IndexError: list index out of range
+2023-10-22 14:18:17.623 | ERROR    | tkinter:__call__:1921 - An error has been caught in function '__call__', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+> File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 83, in run_sorting
+    self.bubble_final_text.insert("1.0", bf)
+    │    │                 │             └ None
+    │    │                 └ <function Text.insert at 0x0000026752911360>
+    │    └ <tkinter.Text object .!text2>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3782, in insert
+    self.tk.call((self._w, 'insert', index, chars) + args)
+    │    │  │     │    │             │      │        └ ()
+    │    │  │     │    │             │      └ None
+    │    │  │     │    │             └ '1.0'
+    │    │  │     │    └ '.!text2'
+    │    │  │     └ <tkinter.Text object .!text2>
+    │    │  └ <method 'call' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Text object .!text2>
+
+_tkinter.TclError: wrong # args: should be ".!text2 insert index chars ?tagList chars tagList ...?"
+2023-10-22 14:18:19.759 | ERROR    | __main__:run_sorting:71 - An error has been caught in function 'run_sorting', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+> File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 71, in run_sorting
+    bf = self.bubble_sort(self.my_list[:])
+         │    │           │    └ [356, 835, 900, 160, 920, 913, 959, 614, 4, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 4...
+         │    │           └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+         │    └ <function SortingComparisonApp.bubble_sort at 0x0000026754C31C60>
+         └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 53, in bubble_sort
+    if data[j] < data[j + 1]:
+       │    │    │    └ 999
+       │    │    └ [835, 900, 356, 920, 913, 959, 614, 160, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 478,...
+       │    └ 999
+       └ [835, 900, 356, 920, 913, 959, 614, 160, 531, 988, 125, 122, 817, 612, 907, 913, 527, 528, 681, 440, 977, 112, 431, 372, 478,...
+
+IndexError: list index out of range
+2023-10-22 14:18:19.763 | ERROR    | tkinter:__call__:1921 - An error has been caught in function '__call__', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+> File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 83, in run_sorting
+    self.bubble_final_text.insert("1.0", bf)
+    │    │                 │             └ None
+    │    │                 └ <function Text.insert at 0x0000026752911360>
+    │    └ <tkinter.Text object .!text2>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3782, in insert
+    self.tk.call((self._w, 'insert', index, chars) + args)
+    │    │  │     │    │             │      │        └ ()
+    │    │  │     │    │             │      └ None
+    │    │  │     │    │             └ '1.0'
+    │    │  │     │    └ '.!text2'
+    │    │  │     └ <tkinter.Text object .!text2>
+    │    │  └ <method 'call' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Text object .!text2>
+
+_tkinter.TclError: wrong # args: should be ".!text2 insert index chars ?tagList chars tagList ...?"
+2023-10-22 14:18:20.426 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:18:20.738 | INFO     | __main__:create_random_list:46 - Создан новый случайный список.
+2023-10-22 14:18:22.168 | ERROR    | __main__:run_sorting:71 - An error has been caught in function 'run_sorting', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+> File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 71, in run_sorting
+    bf = self.bubble_sort(self.my_list[:])
+         │    │           │    └ [776, 847, 535, 696, 142, 652, 539, 863, 276, 429, 115, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587,...
+         │    │           └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+         │    └ <function SortingComparisonApp.bubble_sort at 0x0000026754C31C60>
+         └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 53, in bubble_sort
+    if data[j] < data[j + 1]:
+       │    │    │    └ 999
+       │    │    └ [847, 776, 696, 535, 652, 539, 863, 276, 429, 142, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587, 760,...
+       │    └ 999
+       └ [847, 776, 696, 535, 652, 539, 863, 276, 429, 142, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587, 760,...
+
+IndexError: list index out of range
+2023-10-22 14:18:22.172 | ERROR    | tkinter:__call__:1921 - An error has been caught in function '__call__', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+> File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 83, in run_sorting
+    self.bubble_final_text.insert("1.0", bf)
+    │    │                 │             └ None
+    │    │                 └ <function Text.insert at 0x0000026752911360>
+    │    └ <tkinter.Text object .!text2>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3782, in insert
+    self.tk.call((self._w, 'insert', index, chars) + args)
+    │    │  │     │    │             │      │        └ ()
+    │    │  │     │    │             │      └ None
+    │    │  │     │    │             └ '1.0'
+    │    │  │     │    └ '.!text2'
+    │    │  │     └ <tkinter.Text object .!text2>
+    │    │  └ <method 'call' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Text object .!text2>
+
+_tkinter.TclError: wrong # args: should be ".!text2 insert index chars ?tagList chars tagList ...?"
+2023-10-22 14:18:22.557 | ERROR    | __main__:run_sorting:71 - An error has been caught in function 'run_sorting', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+> File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 71, in run_sorting
+    bf = self.bubble_sort(self.my_list[:])
+         │    │           │    └ [776, 847, 535, 696, 142, 652, 539, 863, 276, 429, 115, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587,...
+         │    │           └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+         │    └ <function SortingComparisonApp.bubble_sort at 0x0000026754C31C60>
+         └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 53, in bubble_sort
+    if data[j] < data[j + 1]:
+       │    │    │    └ 999
+       │    │    └ [847, 776, 696, 535, 652, 539, 863, 276, 429, 142, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587, 760,...
+       │    └ 999
+       └ [847, 776, 696, 535, 652, 539, 863, 276, 429, 142, 197, 670, 975, 779, 852, 516, 781, 517, 902, 528, 669, 722, 975, 587, 760,...
+
+IndexError: list index out of range
+2023-10-22 14:18:22.561 | ERROR    | tkinter:__call__:1921 - An error has been caught in function '__call__', process 'MainProcess' (22112), thread 'MainThread' (18188):
+Traceback (most recent call last):
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 103, in <module>
+    app.root.mainloop()
+    │   │    └ <function Misc.mainloop at 0x0000026752907AC0>
+    │   └ <tkinter.Tk object .>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloop
+    self.tk.mainloop(n)
+    │    │  │        └ 0
+    │    │  └ <method 'mainloop' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Tk object .>
+
+> File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__
+    return self.func(*args)
+           │    │     └ ()
+           │    └ <bound method SortingComparisonApp.run_sorting of <__main__.SortingComparisonApp object at 0x0000026754C19E40>>
+           └ <tkinter.CallWrapper object at 0x0000026754C1A260>
+
+  File "D:\Repoes\LVL4\Bug_Search\Bug_6\main.py", line 83, in run_sorting
+    self.bubble_final_text.insert("1.0", bf)
+    │    │                 │             └ None
+    │    │                 └ <function Text.insert at 0x0000026752911360>
+    │    └ <tkinter.Text object .!text2>
+    └ <__main__.SortingComparisonApp object at 0x0000026754C19E40>
+
+  File "C:\Users\Hyper\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3782, in insert
+    self.tk.call((self._w, 'insert', index, chars) + args)
+    │    │  │     │    │             │      │        └ ()
+    │    │  │     │    │             │      └ None
+    │    │  │     │    │             └ '1.0'
+    │    │  │     │    └ '.!text2'
+    │    │  │     └ <tkinter.Text object .!text2>
+    │    │  └ <method 'call' of '_tkinter.tkapp' objects>
+    │    └ <_tkinter.tkapp object at 0x0000026754756530>
+    └ <tkinter.Text object .!text2>
+
+_tkinter.TclError: wrong # args: should be ".!text2 insert index chars ?tagList chars tagList ...?"
+2023-10-22 14:28:20.337 | SUCCESS  | __main__:run_sorting:88 - Сравнение сортировки завершено.

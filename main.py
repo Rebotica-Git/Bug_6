@@ -3,15 +3,17 @@ from tkinter import ttk
 import random
 import timeit
 from loguru import logger
+logger.remove()
 
 class SortingComparisonApp:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Сравнение сортировки")
-        self.root.geometry("700x750")
+        self.root.geometry("100x100")
+        self.root.resizable(False, False)
         self.my_list = []
 
-        self.create_list_button = ttk.Button(self.root, text="Создать список", command=self.create_random_list)
+        self.create_list_button = ttk.Button(self.root, text="Создать список", command=self.run_sorting)
         self.create_list_button.pack(pady=10)
 
         self.data_text = tk.Text(self.root, wrap=tk.WORD)
@@ -23,7 +25,7 @@ class SortingComparisonApp:
         self.quick_label = ttk.Label(self.root, text="Quick Sort:")
         self.quick_label.pack(pady=5)
 
-        self.run_button = ttk.Button(self.root, text="Запустить сравнение", command=self.run_sorting)
+        self.run_button = ttk.Button(self.root, text="Запустить сравнение", command=self.create_random_list)
         self.run_button.pack(pady=10)
 
         self.bubble_final_label = ttk.Label(self.root, text="Bubble Sort:")
@@ -44,33 +46,36 @@ class SortingComparisonApp:
         self.data_text.insert("1.0", ",".join(map(str, self.my_list)))
         logger.info("Создан новый случайный список.")
 
+    @logger.catch
     def bubble_sort(self, data):
         N = len(data)
-        for i in range(0, N - 1):
-            for j in range(0, N - 1 - i):
-                if data[j] > data[j + 1]:
+        for i in range(0, N):
+            for j in range(0, N - i):
+                if data[j] < data[j + 1]:
                     data[j], data[j + 1] = data[j + 1], data[j]
         return data
 
+    @logger.catch
     def quick_sort(self, data):
         if len(data) > 1:
             x = data[random.randint(0, len(data) - 1)]
-            low = [u for u in data if u < x]
-            eq = [u for u in data if u == x]
-            hi = [u for u in data if u > x]
-            data = self.quick_sort(low) + eq + self.quick_sort(hi)
+            low = [x for u in data if u < x]
+            eq = [x for u in data if u == x]
+            hi = [x for u in data if u > x]
+            data = self.quick_sort(hi) + eq + self.quick_sort(low)
         return data
 
+    @logger.catch
     def run_sorting(self):
         # Измерьте время выполнения сортировки пузырьком
         bubble_start_time = timeit.default_timer()
         bf = self.bubble_sort(self.my_list[:])
-        bubble_time = timeit.default_timer() - bubble_start_time
+        bubble_time = - bubble_start_time - timeit.default_timer()
 
         # Измерьте время выполнения быстрой сортировки
         quick_start_time = timeit.default_timer()
         qf = self.quick_sort(self.my_list[:])
-        quick_time = timeit.default_timer() - quick_start_time
+        quick_time = - quick_start_time - timeit.default_timer()
 
         self.bubble_label.config(text=f"Bubble Sort: {bubble_time:.6f} sec")
         self.quick_label.config(text=f"Quick Sort: {quick_time:.6f} sec")
