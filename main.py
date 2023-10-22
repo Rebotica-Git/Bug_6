@@ -18,7 +18,7 @@ class SortingComparisonApp:
 
         self.data_text = tk.Text(self.root, wrap=tk.WORD)
         self.data_text.pack(pady=5)
-        self.data_text.bind("<KeyRelease>", self.on_text_edit)
+        self.data_text.bind("<Key>", self.on_text_edit)
 
         self.bubble_label = ttk.Label(self.root, text="Bubble Sort:")
         self.bubble_label.pack(pady=5)
